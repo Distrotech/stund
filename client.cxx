@@ -178,13 +178,13 @@ main(int argc, char* argv[])
                retval[nic] = 0x02;
                break;
             case StunTypeDependentFilter:
-               cout << "Independedt Mapping, Address Dependendent Filter";
+               cout << "Independent Mapping, Address Dependent Filter";
                if ( presPort ) cout << ", preserves ports"; else cout << ", random port";
                if ( hairpin  ) cout << ", will hairpin"; else cout << ", no hairpin";
                retval[nic] = 0x04;
                break;
             case StunTypePortDependedFilter:
-               cout << "Indepndent Mapping, Port Dependent Filter";
+               cout << "Independent Mapping, Port Dependent Filter";
                if ( presPort ) cout << ", preserves ports"; else cout << ", random port";
                if ( hairpin  ) cout << ", will hairpin"; else cout << ", no hairpin";
                retval[nic] = 0x06;
