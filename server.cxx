@@ -221,7 +221,7 @@ main(int argc, char* argv[])
       {
          ok = stunServerProcess(info, verbose);
          c++;
-         if ( c%1000 == 0 ) 
+         if ( verbose && (c%1000 == 0) ) 
          {
             clog << "*";
          }
