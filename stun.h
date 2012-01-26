@@ -5,7 +5,7 @@
 #include <time.h>
 
 // if you change this version, change in makefile too 
-#define STUN_VERSION "0.96"
+#define STUN_VERSION "0.97"
 
 #define STUN_MAX_STRING 256
 #define STUN_MAX_UNKNOWN_ATTRIBUTES 8
