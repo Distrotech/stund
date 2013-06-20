@@ -60,3 +60,8 @@ client.o: stun.h udp.h
 stun.o: stun.h udp.h
 udp.o: stun.h udp.h 
 tlsServer.o: stun.h udp.h 
+
+install: all
+	ginstall -D server $(DESTDIR)/usr/sbin/stund
+	ginstall -D client $(DESTDIR)/usr/bin/stun
+
